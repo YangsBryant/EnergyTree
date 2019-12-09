@@ -23,7 +23,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
-public class WaterFlake extends FrameLayout {
+public class EnergyTree extends FrameLayout {
 
     private OnBallItemListener mOnBallItemListener;
     private OnTipsItemListener mOnTipsItemListener;
@@ -32,15 +32,15 @@ public class WaterFlake extends FrameLayout {
     private LayoutInflater mLayoutInflater;
     private List<Float> mOffsets = Arrays.asList(5.0f, 4.5f, 4.8f, 5.5f, 5.8f, 6.0f, 6.5f);
     private boolean isBall=true,isTips=true;
-    public WaterFlake(@NonNull Context context) {
+    public EnergyTree(@NonNull Context context) {
         this(context, null);
     }
 
-    public WaterFlake(@NonNull Context context, @Nullable AttributeSet attrs) {
+    public EnergyTree(@NonNull Context context, @Nullable AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public WaterFlake(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public EnergyTree(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init();
     }
