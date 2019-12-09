@@ -32,13 +32,19 @@ public class MainActivity extends AppCompatActivity {
         initData();
         mWaterFlake = findViewById(R.id.custom_view);
         Button mBtn = findViewById(R.id.btn);
+        mBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mWaterFlake.setModelList(mBallList,mTipsList);
+            }
+        });
         mBtn.post(new Runnable() {
             @Override
             public void run() {
                 mWaterFlake.setModelList(mBallList,mTipsList);
             }
         });
-        //设置Tips提示框点击不会移动消失
+
         mWaterFlake.isCollectTips(false);
         mWaterFlake.setOnBallItemListener(new EnergyTree.OnBallItemListener() {
             @Override
@@ -106,7 +112,6 @@ public class MainActivity extends AppCompatActivity {
         >
         <Button
            android:id="@+id/btn"
-           android:onClick="onClick"
            android:text="重置"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
