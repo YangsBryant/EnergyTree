@@ -10,7 +10,7 @@
 根据EnergyTree控件类的collectAnimator(final View view,boolean isRun)方法，可知道球移动的终点是此布局的中心点，即mHeight/2 andr mWidth/2-60
 可以根据自己的需求改变中心点。
 
-##其他说明
+## 其他说明
 isCollectBall 和 isCollectTips 分别可以控制 点击能量球或者Tips提示，是否可以移动消失
 能力球最多可以有七颗
 Tips提示框最多4个
