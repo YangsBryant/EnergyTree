@@ -12,7 +12,9 @@
 
 ## 其他说明
 isCollectBall 和 isCollectTips 分别可以控制 点击能量球或者Tips提示，是否可以移动消失
+
 能力球最多可以有七颗
+
 Tips提示框最多4个
 
 ## 主要代码
