@@ -3,10 +3,14 @@
 
 ![这是一张图片](https://github.com/YangsBryant/TeaScreenPopupWindow/blob/master/image/kfgmg-a8c9e.gif)
 
-##使用方式
-所需文件：module文件夹下的BallModel和TipsModel实体类，以及EnergyTree控件类，还有所需item布局和资源文件
+## 使用方式
+取出所需文件：module文件夹下的BallModel和TipsModel实体类，以及EnergyTree控件类，还有所需item布局和资源文件
 
-##主要代码
+## 中心点说明
+根据EnergyTree控件类的collectAnimator(final View view,boolean isRun)方法，可知道球移动的终点是此布局的中心点，即mHeight/2 andr mWidth/2-60
+可以根据自己的需求改变中心点。
+
+## 主要代码
 ```java
 public class MainActivity extends AppCompatActivity {
 
@@ -63,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
 }
 ```
 
-##主布局
+## 主布局
 ```java
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
