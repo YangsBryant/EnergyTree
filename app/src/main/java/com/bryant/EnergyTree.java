@@ -93,8 +93,8 @@ public class EnergyTree extends FrameLayout {
                     if (tag instanceof BallModel) {
                         if (mOnBallItemListener != null) {
                             mOnBallItemListener.onItemClick((BallModel) tag);
-                            collectAnimator(view,isBall);
                         }
+                        collectAnimator(view,isBall);
                     }
                 }
             });
@@ -114,7 +114,7 @@ public class EnergyTree extends FrameLayout {
             view.setX((float) ((mWidth * num[i] * 0.11)));
             view.setY((float) ((mHeight * num2[i] * 0.08)));
             view.setTag(tipsModel);
-            if(i==1||i==3){
+            if(i==1||i==2){
                 view.setBackgroundResource(R.mipmap.tips2);
             }
             view.setOnClickListener(new OnClickListener() {
@@ -124,8 +124,8 @@ public class EnergyTree extends FrameLayout {
                     if (tag instanceof TipsModel) {
                         if (mOnTipsItemListener != null) {
                             mOnTipsItemListener.onItemClick((TipsModel) tag);
-                            collectAnimator(view,isTips);
                         }
+                        collectAnimator(view,isTips);
                     }
                 }
             });
