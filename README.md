@@ -10,6 +10,11 @@
 根据EnergyTree控件类的collectAnimator(final View view,boolean isRun)方法，可知道球移动的终点是此布局的中心点，即mHeight/2 andr mWidth/2-60
 可以根据自己的需求改变中心点。
 
+##其他说明
+isCollectBall 和 isCollectTips 分别可以控制 点击能量球或者Tips提示，是否可以移动消失
+能力球最多可以有七颗
+Tips提示框最多4个
+
 ## 主要代码
 ```java
 public class MainActivity extends AppCompatActivity {
@@ -31,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
                 mWaterFlake.setModelList(mBallList,mTipsList);
             }
         });
-
+        //设置Tips提示框点击不会移动消失
         mWaterFlake.isCollectTips(false);
         mWaterFlake.setOnBallItemListener(new EnergyTree.OnBallItemListener() {
             @Override
