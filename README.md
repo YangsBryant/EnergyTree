@@ -1,7 +1,7 @@
 # EnergyTree
 仿蚂蚁森林收集能量
 
-![这是一张图片](https://github.com/YangsBryant/TeaScreenPopupWindow/blob/master/image/kfgmg-a8c9e.gif)
+![这是一张图片](https://github.com/YangsBryant/EnergyTree/blob/master/06b793fc0d2e2147e82a206a46e6e8e2.gif)
 
 ## 使用方式
 取出所需文件：module文件夹下的BallModel和TipsModel实体类，以及EnergyTree控件类，还有所需item布局和资源文件
@@ -119,3 +119,4 @@ public class MainActivity extends AppCompatActivity {
     </LinearLayout>
 </RelativeLayout>
 ```
+## 联系QQ：961606042
