@@ -17,6 +17,8 @@ isCollectBall 和 isCollectTips 分别可以控制 点击能量球或者Tips提�
 
 Tips提示框最多4个
 
+EnergyTree类的107行(X轴)以及108行(Y轴)，可以调节Tips提示框的XY轴位置
+
 ## 主要代码
 ```java
 public class MainActivity extends AppCompatActivity {
