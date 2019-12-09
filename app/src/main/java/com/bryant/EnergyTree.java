@@ -202,7 +202,6 @@ public class EnergyTree extends FrameLayout {
         mAnimator.start();
     }
 
-
     //添加显示动画
     private void addShowViewAnimation(View view) {
         view.setAlpha(0);
